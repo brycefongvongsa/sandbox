@@ -54,7 +54,7 @@ nav {
 }
 .banner {
     height: auto;
-    max-width: 200px;
+    max-width: 150px;
 }
 span {
     color: #ea1538;
@@ -89,15 +89,61 @@ button:hover {
     cursor: pointer;
 }
 /******************************************
-/* ABOUT
+/* SECTION - CONTAINERS
 /*******************************************/
-.about {
+.container {
     display: flex;
     flex-direction: column;
-    padding-left: 10%;
-    padding-right: 10%;
+    padding-left: 20%;
+    padding-right: 20%;
     padding-top: 5vh;
     padding-bottom: 5vh;
+}
+/******************************************
+/* SECTION - SKILLS
+/*******************************************/
+#skills .container ul {
+    display: flex;
+    flex-direction: column;
+    flex-flow: wrap;
+}
+#skills .container ul > .item {
+    flex-basis: 50%;
+}
+#skills .container ul li {
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px;
+    font-size: 20px;
+}
+/******************************************
+/* SECTION - PROJECTS
+/*******************************************/
+#projects .container > p {
+    padding-bottom: 50px;
+}
+#projects .container .project-list {
+    display: flex;
+    flex-direction: column;
+}
+#projects .container .project-list article {
+    display: flex;
+    flex-direction: row;
+    max-height: 100%;
+    max-width: 100%;
+    padding-bottom: 50px;
+}
+#projects .container .project-list article > * {
+    width: 50%;
+    max-height: 250px;
+}
+#projects .container .project-list article img {
+    width: 100%; 
+    height: 100%;
+}
+#projects .container .project-list article .project-desc {
+    align-items: center;
+    padding-left: 100px;
 }
 footer {
 
