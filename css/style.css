@@ -100,6 +100,12 @@ button:hover {
     padding-bottom: 5vh;
 }
 /******************************************
+/* SECTION - ABOUT
+/*******************************************/
+.about-btn {
+    width: fit-content;
+}
+/******************************************
 /* SECTION - SKILLS
 /*******************************************/
 #skills .container ul {
@@ -144,6 +150,41 @@ button:hover {
 #projects .container .project-list article .project-desc {
     align-items: center;
     padding-left: 100px;
+}
+/******************************************
+/* SECTION - CONTACT FORM
+/*******************************************/
+.input-row {
+    display: flex;
+    justify-content: space-between;
+}
+.input-group {
+    margin-bottom: 20px;
+}
+.input-row .input-group {
+    flex-basis: 45%;
+}
+input {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    outline: none;
+    padding-bottom: 5px;
+}
+textarea {
+    width: 100%;
+    border: 1px solid #ccc;
+    outline: none;
+    padding: 10px;
+    box-sizing: border-box;
+}
+label {
+    margin-bottom: 6px;
+    display: block;
+    color: #1c00b5;
+}
+.contact-btn {
+    margin: 20px 0;
 }
 footer {
 
