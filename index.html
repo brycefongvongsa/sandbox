@@ -21,8 +21,8 @@
                 <ul>
                     <li><a href="#">Home</a></li>
                     <li><a href="#">About</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Practices</a></li>
+                    <li><a href="#">Projects</a></li>
                     <!-- <li><a href="#">Contact</a></li> -->
                 </ul>
                 <button type="button">Contact</button>
@@ -32,7 +32,7 @@
             <div class="container">
                 <h1>About Me</h1>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis voluptatem maxime itaque aspernatur temporibus corporis veniam reiciendis, vitae dolorum aliquid harum iure ipsa provident rerum. Nostrum sequi veritatis accusantium dolorum.</p>
-                <button type="button">Resume</button>
+                <button class="about-btn" type="button">Resume</button>
             </div>
         </section>
         <section id="skills">
@@ -77,8 +77,29 @@
         <section id="contact">
             <div class="container">
                 <h2>Contact Me</h2>
-                <p>Expect a response within 24 hours. I look forward to hearing from you!</p>
-                <form method="post"></form>
+                <p>I look forward to hearing from you!</p>
+                <div class="contact-box">
+                    <form>
+                        <div class="input-row">
+                            <div class="input-group">
+                                <label>Name</label>
+                                <input type="text" placeholder="First and Last">
+                            </div>
+                            <div class="input-group">
+                                <label>Email</label>
+                                <input type="text" placeholder="brycef24@gmail.com">
+                            </div>
+                        </div>
+                        <div class="input-group">
+                            <label>Subject</label>
+                            <input type="text" placeholder="Website Consultation">
+                        </div>
+                        <label>Message</label>
+                        <textarea rows="5" placeholder="Enter message here"></textarea>
+                        <button class="contact-btn" type="submit">SEND MESSAGE</button>
+                    </form>
+                </div>
+
             </div>
         </section>
 	</body>
