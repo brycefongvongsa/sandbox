@@ -29,6 +29,9 @@ body {
 /******************************************
 /* LAYOUT
 /*******************************************/
+ul {
+    padding: 0px;
+}
 header {
     background: rgb(102, 120, 162);
 }
@@ -186,10 +189,30 @@ label {
 .contact-btn {
     margin: 20px 0;
 }
-footer {
-
+/******************************************
+/* FOOTER
+/*******************************************/
+#footer .container {
+    background-color: whitesmoke;
+    align-items: center;
+    /* color: rgb(59,19,238); */
 }
-
+.socials {
+    display: flex;
+    justify-content: center;
+} 
+#footer ul li {
+    list-style-type: none;
+    /* display: inline-block; */
+    padding: 0px 10px;
+}
+.copyright {
+    text-align: center;
+}
+.icon img {
+    width: 30px;
+    height: 30px;
+}
 /******************************************
 /* ADDITIONAL STYLES
 /*******************************************/
