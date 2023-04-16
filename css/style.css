@@ -1,6 +1,7 @@
 /* Box Model Hack */
 * {
     box-sizing: border-box;
+    
 }
 
 /* Clear fix hack */
@@ -22,7 +23,8 @@
 /*******************************************/
 
 body {
-
+    margin: 0;
+    font: 1em "Fira Sans", sans-serif;
 }
 
 
@@ -38,7 +40,7 @@ header {
 .hero {
     height: 100vh;
     width: 100%;
-    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(../img/turquoise-hills.png);
+    background-image: linear-gradient(to right bottom, #845ec2, #4e85e5, #00a6f5, #00c4f5, #12ddeb);
     background-size:cover;
     background-position: center;
 }
@@ -79,7 +81,7 @@ nav ul li a:hover {
 }
 button {
     border: none;
-    background: rgb(59,19,238);
+    background: #845EC2;
     padding: 12px 30px;
     border-radius: 30px;
     color: white;
@@ -97,8 +99,8 @@ button:hover {
 .container {
     display: flex;
     flex-direction: column;
-    padding-left: 20%;
-    padding-right: 20%;
+    padding-left: 10%;
+    padding-right: 10%;
     padding-top: 5vh;
     padding-bottom: 5vh;
 }
@@ -107,6 +109,24 @@ button:hover {
 /*******************************************/
 .about-btn {
     width: fit-content;
+}
+#about .container {
+    display: flex;
+    flex-direction: row;
+}
+#about .container .about-left {
+    float: left;
+    width: 60%;
+}
+#about .container .about-right {
+    margin-left: 40px;
+    width: 40%;
+}
+#about .container .about-right img {
+    object-fit:contain;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
 }
 /******************************************
 /* SECTION - SKILLS
@@ -184,7 +204,6 @@ textarea {
 label {
     margin-bottom: 6px;
     display: block;
-    color: #1c00b5;
 }
 .contact-btn {
     margin: 20px 0;
@@ -195,7 +214,6 @@ label {
 #footer .container {
     background-color: whitesmoke;
     align-items: center;
-    /* color: rgb(59,19,238); */
 }
 .socials {
     display: flex;
